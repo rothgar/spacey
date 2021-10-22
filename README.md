@@ -1,39 +1,6 @@
 # Spacey
 
 A Twitter Spaces search client
-
-## Install
-
-via `brew`
-
-```
-brew install rothgar/tap/spacey
-```
-
-via `bin`
-```
-bin install rothgar/spacey
-```
-
-## Usage
-
-You'll need to get a [developer API key](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) to use `spacey`.
-Export the required fields into your environment.
-
-```
-export TWITTER_API_KEY=
-export TWITTER_API_KEY_SECRET=
-export TWITTER_BEARER_TOKEN=
-export TWITTER_ACCESS_TOKEN=
-export TWITTER_ACCESS_TOKEN_SECRET=
-```
-
-Search for spaces based on multiple queries in the title of the space.
-Queries are case insensitive and multiple words should be quoted (e.g. "fireside chat")
-```
-spacey $QUERY1 $QUERY2 $QUERY3
-```
-
 ```
 spacey career industry
 
@@ -46,7 +13,33 @@ spacey career industry
 └──────────┴────────────────────────────────────────────────────────────────────┴──────┴──────────────┴──────────┴────────────────────────────────────────────┘
 ```
 
+## Install
+
+via `brew`
+
+```
+brew install rothgar/tap/spacey
+```
+
+via [`bin`](https://github.com/marcosnils/bin)
+```
+bin install rothgar/spacey
+```
+
+## Usage
+
+You'll need to get a [developer API key](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) to use `spacey`.
+Export the required fields into your environment.
+
+```
+export TWITTER_BEARER_TOKEN=AAAAAAAAAAAAAAAA...
+```
+
+Search for spaces based on multiple queries in the title of the space.
+Queries are case insensitive and multiple words should be quoted (e.g. "fireside chat")
+```
+spacey $QUERY1 $QUERY2 $QUERY3
+```
+
 You can also filter output by a minimum number of participants and speakers.
 You can also change the output type with the `--output` flag.
-
-
