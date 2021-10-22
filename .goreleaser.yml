@@ -5,6 +5,7 @@ before:
 builds:
   - env:
       - CGO_ENABLED=0
+      - GITHUB_TOKEN={{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}
     goos:
       - linux
       - darwin
@@ -17,7 +18,6 @@ brews:
   - tap:
       owner: rothgar
       name: homebrew-tap
-      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     homepage: "https://github.com/rothgar/spacey-cli"
     description: "Twitter spaces search CLI"
     license: MIT
