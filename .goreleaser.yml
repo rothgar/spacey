@@ -17,6 +17,7 @@ brews:
   - tap:
       owner: rothgar
       name: homebrew-tap
+    folder: Formula
     homepage: "https://github.com/rothgar/spacey-cli"
     description: "Twitter spaces search CLI"
     license: MIT
