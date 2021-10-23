@@ -23,7 +23,7 @@ brew install rothgar/tap/spacey
 
 via [`bin`](https://github.com/marcosnils/bin)
 ```
-bin install rothgar/spacey
+bin install https://github.com/rothgar/spacey
 ```
 
 ## Usage
